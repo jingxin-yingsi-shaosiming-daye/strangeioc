@@ -13,5 +13,15 @@ public interface IScoreService
     void RequestScore(string url);
 
 
-    int OnReceiveScore();
+    /// <summary>
+    /// 当接收分数时
+    /// </summary>
+    /// <returns></returns>
+    void OnReceiveScore();
+
+    /// <summary>
+    /// 向服务器发出更新分数
+    /// </summary>
+    /// <param name="num"></param>
+    void UpdataScore(string url, int num);
 }
