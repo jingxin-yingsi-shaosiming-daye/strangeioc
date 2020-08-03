@@ -25,3 +25,4 @@ public class ScoreService : IScoreService
        Debug.Log("更新分数" +url +"分数:"+num);
     }
 }
+ 
