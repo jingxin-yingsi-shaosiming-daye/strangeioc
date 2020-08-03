@@ -64,6 +64,7 @@
      <Compile Include="Assets\Demo1\Scripts\Demo1Context.cs" />
      <Compile Include="Assets\Demo1\Scripts\Demo1ContextView.cs" />
      <Compile Include="Assets\Demo1\Scripts\Models\ScoreModel.cs" />
+     <Compile Include="Assets\Demo1\Scripts\Services\Demo1ServiceEvent.cs" />
      <Compile Include="Assets\Demo1\Scripts\Services\IScoreService.cs" />
      <Compile Include="Assets\Demo1\Scripts\Services\ScoreService.cs" />
      <Compile Include="Assets\Demo1\Scripts\View\CubeMediator.cs" />

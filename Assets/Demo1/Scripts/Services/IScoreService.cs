@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using strange.extensions.dispatcher.eventdispatcher.api;
 using UnityEngine;
 
 public interface IScoreService
 {
     
     
+     //局部事件调度器
+     IEventDispatcher dispatcher { get; set; }
+     
     /// <summary>
     /// 向一个网址发出请求分数申请
     /// </summary>
