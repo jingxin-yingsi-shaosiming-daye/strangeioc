@@ -9,6 +9,10 @@ public class RequestScoreCommand : EventCommand//有全局事件调度员的命�
 
     [Inject] public IScoreService service { get; set; }
 
+    
+    [Inject]
+    public ScoreModel scoreModel { get; set; }
+
 
     public override void Execute()
     {
@@ -30,8 +34,13 @@ public class RequestScoreCommand : EventCommand//有全局事件调度员的命�
         Debug.Log("控制层: 接收到服务层分发的数据 分数数据");
         Debug.Log("收到服务器的分数");
         
+        //1 保存到model层
+        scoreModel.score = (int) evt.data;
+        
+        //2 控制层接收到数据 分发事件
         dispatcher.Dispatch(DemoMediatorEvent.RefashScore,evt);
         
+        //3 移除事件
         service.dispatcher.RemoveListener(Demo1ServiceEvent.ReceiveScore, OnServiceReceiveScore);
         Release();//释放这个命令
     }

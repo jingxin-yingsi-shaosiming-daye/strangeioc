@@ -28,6 +28,7 @@ public class Demo1Context : MVCSContext
 
         #region 1 models bind
 
+        injectionBinder.Bind<ScoreModel>().To<ScoreModel>();
         
 
         #endregion
