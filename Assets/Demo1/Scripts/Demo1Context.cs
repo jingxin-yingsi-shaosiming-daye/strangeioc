@@ -33,6 +33,7 @@ public class Demo1Context : MVCSContext
 
         #region 2 mediator bind
 
+        mediationBinder.Bind<CubeView>().To<CubeMediator>();
         
 
         #endregion

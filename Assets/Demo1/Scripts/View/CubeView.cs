@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class CudeView : View
+public class CubeView : View
 {
 
 
