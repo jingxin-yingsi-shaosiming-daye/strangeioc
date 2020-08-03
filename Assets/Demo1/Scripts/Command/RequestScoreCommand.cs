@@ -4,7 +4,7 @@ using strange.extensions.command.impl;
 using strange.extensions.dispatcher.eventdispatcher.api;
 using UnityEngine;
 
-public class RequestScoreCommand : Command
+public class RequestScoreCommand : EventCommand//有全局事件调度员的命令对象
 {
 
     [Inject] public IScoreService service { get; set; }
@@ -29,6 +29,9 @@ public class RequestScoreCommand : Command
     {
         Debug.Log("控制层: 接收到服务层分发的数据 分数数据");
         Debug.Log("收到服务器的分数");
+        
+        dispatcher.Dispatch(DemoMediatorEvent.RefashScore,evt);
+        
         service.dispatcher.RemoveListener(Demo1ServiceEvent.ReceiveScore, OnServiceReceiveScore);
         Release();//释放这个命令
     }

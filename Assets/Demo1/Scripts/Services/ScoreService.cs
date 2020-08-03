@@ -7,7 +7,7 @@ using UnityEngine;
 public class ScoreService : IScoreService
 {
     [Inject]
-    public IEventDispatcher dispatcher { get; set; }
+    public IEventDispatcher dispatcher { get; set; }//局部事件   只在本类中使用
 
     /// <summary>
     /// 向一个网址发出请求分数申请

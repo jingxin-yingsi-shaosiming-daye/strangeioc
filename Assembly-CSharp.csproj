@@ -69,6 +69,7 @@
      <Compile Include="Assets\Demo1\Scripts\Services\ScoreService.cs" />
      <Compile Include="Assets\Demo1\Scripts\View\CubeMediator.cs" />
      <Compile Include="Assets\Demo1\Scripts\View\CubeView.cs" />
+     <Compile Include="Assets\Demo1\Scripts\View\DemoMediatorEvent.cs" />
      <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameContext.cs" />
      <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameRoot.cs" />
      <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\GameEvent.cs" />
