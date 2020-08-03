@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{99B4383C-2A3E-EFCB-17F1-9D1D6E55F84B}</ProjectGuid>
+    <ProjectGuid>{DFC8BC3D-C22A-C171-C894-86D1B2323747}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,8 +58,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demo1\Scripts\Command\StartCommand.cs" />
      <Compile Include="Assets\Demo1\Scripts\Demo1Context.cs" />
      <Compile Include="Assets\Demo1\Scripts\Demo1ContextView.cs" />
+     <Compile Include="Assets\Demo1\Scripts\Models\ScoreModel.cs" />
+     <Compile Include="Assets\Demo1\Scripts\Services\IScoreService.cs" />
      <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameContext.cs" />
      <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameRoot.cs" />
      <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\GameEvent.cs" />
@@ -250,31 +253,31 @@
      <None Include="Assets\StrangeIoC\LICENSE-2.0.txt" />
      <None Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\ReadMe.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/UnityDeveloper-10001/Documents/UnityWorkSpace/LearningStrangeIoC/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/UnityDeveloper-10001/Documents/StrangeIoCMe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
