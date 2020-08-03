@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using strange.extensions.command.impl;
 using strange.extensions.context.api;
 using strange.extensions.context.impl;
+using strange.extensions.injector.impl;
 using strange.framework.api;
 using UnityEngine;
 
@@ -40,12 +41,14 @@ public class Demo1Context : MVCSContext
 
         #region 3 command bind
 
+        commandBinder.Bind(Demo1CommandEvent.RequestScoreCommand).To<RequestScoreCommand>();  //命令绑定事件
         
 
         #endregion
 
         #region 4 service bind
 
+        injectionBinder.Bind<IScoreService>().To<ScoreService>().ToSingleton();
         
 
         #endregion
