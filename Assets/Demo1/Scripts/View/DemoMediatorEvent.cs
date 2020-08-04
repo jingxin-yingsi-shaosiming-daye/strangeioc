@@ -4,5 +4,6 @@ using UnityEngine;
 
 public enum DemoMediatorEvent 
 {
-    RefashScore
+    RefashScore,
+    ClickCube
 }

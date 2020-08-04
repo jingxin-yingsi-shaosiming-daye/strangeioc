@@ -61,6 +61,7 @@
      <Compile Include="Assets\Demo1\Scripts\Command\Demo1CommandEvent.cs" />
      <Compile Include="Assets\Demo1\Scripts\Command\RequestScoreCommand.cs" />
      <Compile Include="Assets\Demo1\Scripts\Command\StartCommand.cs" />
+     <Compile Include="Assets\Demo1\Scripts\Command\UpScoreCommand.cs" />
      <Compile Include="Assets\Demo1\Scripts\Demo1Context.cs" />
      <Compile Include="Assets\Demo1\Scripts\Demo1ContextView.cs" />
      <Compile Include="Assets\Demo1\Scripts\Models\ScoreModel.cs" />

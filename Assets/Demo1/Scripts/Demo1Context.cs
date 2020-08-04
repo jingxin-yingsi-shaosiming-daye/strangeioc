@@ -28,13 +28,15 @@ public class Demo1Context : MVCSContext
 
         #region 1 models bind
 
-        injectionBinder.Bind<ScoreModel>().To<ScoreModel>();
+        //模块绑定
+        injectionBinder.Bind<ScoreModel>().To<ScoreModel>().ToSingleton();
         
 
         #endregion
 
         #region 2 mediator bind
 
+        //视图绑定
         mediationBinder.Bind<CubeView>().To<CubeMediator>();
         
 
@@ -42,13 +44,16 @@ public class Demo1Context : MVCSContext
 
         #region 3 command bind
 
+        //命令绑定  框架托管
         commandBinder.Bind(Demo1CommandEvent.RequestScoreCommand).To<RequestScoreCommand>();  //命令绑定事件
+        commandBinder.Bind(Demo1CommandEvent.UpScoreCommand).To<UpScoreCommand>();
         
 
         #endregion
 
         #region 4 service bind
 
+        //服务单例注入绑定
         injectionBinder.Bind<IScoreService>().To<ScoreService>().ToSingleton();
         
 
