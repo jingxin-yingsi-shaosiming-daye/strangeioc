@@ -38,18 +38,25 @@ using System;
 
 namespace strange.framework.api
 {
+	/// <summary>
+	/// 绑定器接口
+	/// </summary>
 	public interface IBinder
 	{
 		/// Bind a Binding Key to a class or interface generic
+		/// 绑定一个 key 到一个 类 或 通用接口
 		IBinding Bind<T>();
 
 		/// Bind a Binding Key to a value
+		/// 绑定一个 key 到 一个值
 		IBinding Bind(object value);
 
 		/// Retrieve a binding based on the provided Type
+		/// 取回   一个 绑定    	基于   		提供的类型 
 		IBinding GetBinding<T> ();
 
 		/// Retrieve a binding based on the provided object
+		/// 取回     一个   绑定   基于   提供的对象
 		IBinding GetBinding(object key);
 		
 		/// Retrieve a binding based on the provided Key (generic)/Name combo

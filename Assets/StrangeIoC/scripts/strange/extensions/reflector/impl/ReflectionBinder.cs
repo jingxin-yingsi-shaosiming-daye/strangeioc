@@ -33,6 +33,9 @@ using System.Collections;
 
 namespace strange.extensions.reflector.impl
 {
+	/// <summary>
+	/// 反射类绑定者
+	/// </summary>
 	public class ReflectionBinder : strange.framework.impl.Binder, IReflectionBinder
 	{
 		public ReflectionBinder ()

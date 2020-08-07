@@ -18,6 +18,9 @@ using System;
 
 namespace strange.framework.api
 {
+	/// <summary>
+	/// 绑定常量
+	/// </summary>
 	public enum BindingConst
 	{
 		/// Null is an acceptable binding, but dictionaries choke on it, so we map null to this instead.

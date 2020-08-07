@@ -18,6 +18,9 @@ using System;
 
 namespace strange.framework.api
 {
+	/// <summary>
+	/// 绑定约束类型
+	/// </summary>
 	public enum BindingConstraintType
 	{
 		/// Constrains a SemiBinding to carry no more than one item in its Value

@@ -44,6 +44,9 @@ using System;
 
 namespace strange.framework.api
 {
+	/// <summary>
+	/// 名词 绑定体
+	/// </summary>
 	public interface IBinding
 	{
 		/**

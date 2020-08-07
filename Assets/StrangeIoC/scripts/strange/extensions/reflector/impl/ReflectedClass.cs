@@ -31,11 +31,26 @@ using strange.extensions.reflector.api;
 
 namespace strange.extensions.reflector.impl
 {
+	/// <summary>
+	/// 被反射的类的信息
+	/// </summary>
 	public class ReflectedClass : IReflectedClass
 	{
+		/// <summary>
+		/// 构造信息 构造器
+		/// </summary>
 		public ConstructorInfo Constructor{ get; set;}
+		/// <summary>
+		/// 构造参数
+		/// </summary>
 		public Type[] ConstructorParameters{ get; set;}
+		/// <summary>
+		/// 方法信息数组  Post构造器
+		/// </summary>
 		public MethodInfo[] PostConstructors{ get; set;}
+		/// <summary>
+		/// 
+		/// </summary>
 		public KeyValuePair<Type, PropertyInfo>[] Setters{ get; set;}
 		public object[] SetterNames{ get; set;}
 		public bool PreGenerated{ get; set;}
