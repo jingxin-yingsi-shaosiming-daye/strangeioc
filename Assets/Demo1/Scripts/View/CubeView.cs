@@ -11,7 +11,7 @@ public class CubeView : View
 {
 
 
-    #region 000 事件调度管理员
+    #region 000 事件分发管理无人机
 
     [Inject]
     public IEventDispatcher dispatcher { get; set; }

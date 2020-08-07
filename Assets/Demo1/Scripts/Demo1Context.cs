@@ -35,7 +35,7 @@ public class Demo1Context : MVCSContext
         #endregion
 
         #region 2 mediator bind
-
+ 
         //视图绑定
         mediationBinder.Bind<CubeView>().To<CubeMediator>();
         
@@ -62,12 +62,13 @@ public class Demo1Context : MVCSContext
 
 
 
-        //因为这个命令绑定后就要执行 所以放到最后面
+        //因为这个命令绑定后就要执行 可能会使用上面绑定的资源 所以放到最后面
         #region 9 StartCommand
 
         commandBinder.Bind(ContextEvent.START).To<StartCommand>().Once(); //绑定开始内置事件
 
-
+        //ContextEvent.START  框架提供的枚举
+        //Once 执行后 会解绑
         #endregion
 
 

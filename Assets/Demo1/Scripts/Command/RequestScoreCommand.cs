@@ -4,6 +4,9 @@ using strange.extensions.command.impl;
 using strange.extensions.dispatcher.eventdispatcher.api;
 using UnityEngine;
 
+/// <summary>
+/// 请求分数
+/// </summary>
 public class RequestScoreCommand : EventCommand//有全局事件调度员的命令对象
 {
 
